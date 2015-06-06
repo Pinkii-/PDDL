@@ -3,12 +3,13 @@
   (:domain mintask)
 
   (:objects
-    p1 p2 p3 - Programador
+    p1 p2 p3 p4 - Programador
     t1 t2 t3 - Tarea
   )
 
   (:init
   	(= (ttime) 0)
+    (= (nprog) 0)
   	(tSimple t1)
   	(tSimple t2)
   	(tSimple t3)
@@ -22,9 +23,13 @@
   	(= (calidad p2) 2)
   	(= (tareas-programador p2) 2)
   	;Programador 3
-  	(= (nivel-programador p3) 2)
-  	(= (calidad p3) 1)
-  	(= (tareas-programador p3) 2)
+    (= (nivel-programador p3) 2)
+    (= (calidad p3) 1)
+    (= (tareas-programador p3) 2)
+    ;Programador 3
+    (= (nivel-programador p4) 2)
+    (= (calidad p4) 1)
+    (= (tareas-programador p4) 2)
 
   	;Tarea 1
   	(= (nivel-tarea t1) 3)
@@ -41,5 +46,7 @@
   (:goal
   	(forall (?t - Tarea) (finalizada ?t))
   )
-  (:metric minimize (ttime))
+  ;(:metric minimize (+ (* (ttime) 0.7) (* (nprog) 100)))
+  ;(:metric minimize (ttime))
+  (:metric minimize (nprog))
 )

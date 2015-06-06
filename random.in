@@ -1,0 +1,32 @@
+(define (problem test0) (:domain mintask)
+ (:objects
+ p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 - Programador
+ t0 t1 t2 t3 t4 t5 t6 t7 t8 - Tarea)
+(:init (= (ttime) 0) (= (nprog) 0)(tSimple t0)(tSimple t1)(tSimple t2)(tSimple t3)(tSimple t4)(tSimple t5)(tSimple t6)(tSimple t7)(tSimple t8)
+(= (nivel-programador p0) 1) (= (calidad p0) 1) (= (tareas-programador p0) 2) ; Programador 0
+(= (nivel-programador p1) 3) (= (calidad p1) 2) (= (tareas-programador p1) 2) ; Programador 1
+(= (nivel-programador p2) 1) (= (calidad p2) 2) (= (tareas-programador p2) 2) ; Programador 2
+(= (nivel-programador p3) 3) (= (calidad p3) 2) (= (tareas-programador p3) 2) ; Programador 3
+(= (nivel-programador p4) 2) (= (calidad p4) 1) (= (tareas-programador p4) 2) ; Programador 4
+(= (nivel-programador p5) 2) (= (calidad p5) 1) (= (tareas-programador p5) 2) ; Programador 5
+(= (nivel-programador p6) 3) (= (calidad p6) 1) (= (tareas-programador p6) 2) ; Programador 6
+(= (nivel-programador p7) 3) (= (calidad p7) 1) (= (tareas-programador p7) 2) ; Programador 7
+(= (nivel-programador p8) 3) (= (calidad p8) 2) (= (tareas-programador p8) 2) ; Programador 8
+(= (nivel-programador p9) 2) (= (calidad p9) 2) (= (tareas-programador p9) 2) ; Programador 9
+(= (nivel-programador p10) 3) (= (calidad p10) 2) (= (tareas-programador p10) 2) ; Programador 10
+(= (nivel-programador p11) 3) (= (calidad p11) 1) (= (tareas-programador p11) 2) ; Programador 11
+(= (nivel-programador p12) 2) (= (calidad p12) 2) (= (tareas-programador p12) 2) ; Programador 12
+(= (nivel-programador p13) 2) (= (calidad p13) 2) (= (tareas-programador p13) 2) ; Programador 13
+(= (nivel-programador p14) 1) (= (calidad p14) 2) (= (tareas-programador p14) 2) ; Programador 14
+(= (nivel-programador p15) 2) (= (calidad p15) 2) (= (tareas-programador p15) 2) ; Programador 15
+(= (nivel-programador p16) 3) (= (calidad p16) 1) (= (tareas-programador p16) 2) ; Programador 16
+(= (nivel-tarea t0) 1) (= (tiempo-tarea t0) 5)
+(= (nivel-tarea t1) 1) (= (tiempo-tarea t1) 5)
+(= (nivel-tarea t2) 1) (= (tiempo-tarea t2) 5)
+(= (nivel-tarea t3) 2) (= (tiempo-tarea t3) 5)
+(= (nivel-tarea t4) 1) (= (tiempo-tarea t4) 5)
+(= (nivel-tarea t5) 1) (= (tiempo-tarea t5) 5)
+(= (nivel-tarea t6) 3) (= (tiempo-tarea t6) 5)
+(= (nivel-tarea t7) 2) (= (tiempo-tarea t7) 5)
+(= (nivel-tarea t8) 3) (= (tiempo-tarea t8) 5)
+) (:goal (forall (?t - Tarea) (finalizada ?t)) ) (:metric minimize (ttime)) )
