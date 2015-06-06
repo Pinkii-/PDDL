@@ -9,7 +9,6 @@
 
   (:init
     (= (ttime) 0)
-    (= (nprog) 0)
     (tBasica t1)
     (tBasica t2)
     (tBasica t3)
@@ -17,19 +16,15 @@
     ;Programador 1
     (= (nivel-programador p1) 3)
     (= (calidad p1) 2)
-    (= (tareas-programador p1) 2)
     ;Programador 2 
     (= (nivel-programador p2) 2)
     (= (calidad p2) 2)
-    (= (tareas-programador p2) 2)
     ;Programador 3
     (= (nivel-programador p3) 2)
     (= (calidad p3) 2)
-    (= (tareas-programador p3) 2)
     ;Programador 4
     (= (nivel-programador p4) 2)
     (= (calidad p4) 1)
-    (= (tareas-programador p4) 2)
 
     ;Tarea 1
     (= (nivel-tarea t1) 3)
@@ -46,6 +41,6 @@
   (:goal
     (forall (?t - Tarea) (finalizada ?t))
   )
-  (:metric minimize (+ (* (ttime) 5) (* (nprog) 15)))
+  (:metric minimize (ttime))
 
 )

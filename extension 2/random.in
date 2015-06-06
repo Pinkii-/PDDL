@@ -1,0 +1,78 @@
+(define (problem test0) (:domain mintask)
+ (:objects
+ p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34 p35 p36 p37 p38 p39 p40 p41 - Programador
+ t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 - Tarea)
+(:init (= (ttime) 0)(tBasica t0)(tBasica t1)(tBasica t2)(tBasica t3)(tBasica t4)(tBasica t5)(tBasica t6)(tBasica t7)(tBasica t8)(tBasica t9)(tBasica t10)(tBasica t11)(tBasica t12)(tBasica t13)(tBasica t14)(tBasica t15)(tBasica t16)(tBasica t17)(tBasica t18)(tBasica t19)(tBasica t20)(tBasica t21)(tBasica t22)(tBasica t23)(tBasica t24)(tBasica t25)(tBasica t26)(tBasica t27)(tBasica t28)(tBasica t29)
+(= (nivel-programador p0) 1) (= (calidad p0) 2) ; Programador 0
+(= (nivel-programador p1) 3) (= (calidad p1) 1) ; Programador 1
+(= (nivel-programador p2) 1) (= (calidad p2) 2) ; Programador 2
+(= (nivel-programador p3) 2) (= (calidad p3) 1) ; Programador 3
+(= (nivel-programador p4) 3) (= (calidad p4) 2) ; Programador 4
+(= (nivel-programador p5) 2) (= (calidad p5) 1) ; Programador 5
+(= (nivel-programador p6) 1) (= (calidad p6) 1) ; Programador 6
+(= (nivel-programador p7) 2) (= (calidad p7) 2) ; Programador 7
+(= (nivel-programador p8) 2) (= (calidad p8) 1) ; Programador 8
+(= (nivel-programador p9) 3) (= (calidad p9) 2) ; Programador 9
+(= (nivel-programador p10) 1) (= (calidad p10) 1) ; Programador 10
+(= (nivel-programador p11) 2) (= (calidad p11) 2) ; Programador 11
+(= (nivel-programador p12) 3) (= (calidad p12) 1) ; Programador 12
+(= (nivel-programador p13) 1) (= (calidad p13) 1) ; Programador 13
+(= (nivel-programador p14) 3) (= (calidad p14) 2) ; Programador 14
+(= (nivel-programador p15) 2) (= (calidad p15) 2) ; Programador 15
+(= (nivel-programador p16) 2) (= (calidad p16) 1) ; Programador 16
+(= (nivel-programador p17) 1) (= (calidad p17) 1) ; Programador 17
+(= (nivel-programador p18) 3) (= (calidad p18) 1) ; Programador 18
+(= (nivel-programador p19) 2) (= (calidad p19) 2) ; Programador 19
+(= (nivel-programador p20) 2) (= (calidad p20) 2) ; Programador 20
+(= (nivel-programador p21) 3) (= (calidad p21) 1) ; Programador 21
+(= (nivel-programador p22) 1) (= (calidad p22) 2) ; Programador 22
+(= (nivel-programador p23) 1) (= (calidad p23) 2) ; Programador 23
+(= (nivel-programador p24) 2) (= (calidad p24) 2) ; Programador 24
+(= (nivel-programador p25) 2) (= (calidad p25) 1) ; Programador 25
+(= (nivel-programador p26) 3) (= (calidad p26) 1) ; Programador 26
+(= (nivel-programador p27) 3) (= (calidad p27) 1) ; Programador 27
+(= (nivel-programador p28) 3) (= (calidad p28) 2) ; Programador 28
+(= (nivel-programador p29) 2) (= (calidad p29) 1) ; Programador 29
+(= (nivel-programador p30) 1) (= (calidad p30) 2) ; Programador 30
+(= (nivel-programador p31) 3) (= (calidad p31) 2) ; Programador 31
+(= (nivel-programador p32) 1) (= (calidad p32) 2) ; Programador 32
+(= (nivel-programador p33) 2) (= (calidad p33) 1) ; Programador 33
+(= (nivel-programador p34) 3) (= (calidad p34) 2) ; Programador 34
+(= (nivel-programador p35) 3) (= (calidad p35) 1) ; Programador 35
+(= (nivel-programador p36) 1) (= (calidad p36) 1) ; Programador 36
+(= (nivel-programador p37) 1) (= (calidad p37) 2) ; Programador 37
+(= (nivel-programador p38) 1) (= (calidad p38) 2) ; Programador 38
+(= (nivel-programador p39) 1) (= (calidad p39) 2) ; Programador 39
+(= (nivel-programador p40) 2) (= (calidad p40) 2) ; Programador 40
+(= (nivel-programador p41) 3) (= (calidad p41) 1) ; Programador 41
+(= (nivel-tarea t0) 3) (= (tiempo-tarea t0) 5)
+(= (nivel-tarea t1) 3) (= (tiempo-tarea t1) 5)
+(= (nivel-tarea t2) 3) (= (tiempo-tarea t2) 5)
+(= (nivel-tarea t3) 3) (= (tiempo-tarea t3) 5)
+(= (nivel-tarea t4) 2) (= (tiempo-tarea t4) 5)
+(= (nivel-tarea t5) 2) (= (tiempo-tarea t5) 5)
+(= (nivel-tarea t6) 1) (= (tiempo-tarea t6) 5)
+(= (nivel-tarea t7) 2) (= (tiempo-tarea t7) 5)
+(= (nivel-tarea t8) 3) (= (tiempo-tarea t8) 5)
+(= (nivel-tarea t9) 3) (= (tiempo-tarea t9) 5)
+(= (nivel-tarea t10) 2) (= (tiempo-tarea t10) 5)
+(= (nivel-tarea t11) 2) (= (tiempo-tarea t11) 5)
+(= (nivel-tarea t12) 3) (= (tiempo-tarea t12) 5)
+(= (nivel-tarea t13) 1) (= (tiempo-tarea t13) 5)
+(= (nivel-tarea t14) 1) (= (tiempo-tarea t14) 5)
+(= (nivel-tarea t15) 3) (= (tiempo-tarea t15) 5)
+(= (nivel-tarea t16) 1) (= (tiempo-tarea t16) 5)
+(= (nivel-tarea t17) 2) (= (tiempo-tarea t17) 5)
+(= (nivel-tarea t18) 2) (= (tiempo-tarea t18) 5)
+(= (nivel-tarea t19) 3) (= (tiempo-tarea t19) 5)
+(= (nivel-tarea t20) 3) (= (tiempo-tarea t20) 5)
+(= (nivel-tarea t21) 1) (= (tiempo-tarea t21) 5)
+(= (nivel-tarea t22) 3) (= (tiempo-tarea t22) 5)
+(= (nivel-tarea t23) 2) (= (tiempo-tarea t23) 5)
+(= (nivel-tarea t24) 1) (= (tiempo-tarea t24) 5)
+(= (nivel-tarea t25) 2) (= (tiempo-tarea t25) 5)
+(= (nivel-tarea t26) 1) (= (tiempo-tarea t26) 5)
+(= (nivel-tarea t27) 3) (= (tiempo-tarea t27) 5)
+(= (nivel-tarea t28) 2) (= (tiempo-tarea t28) 5)
+(= (nivel-tarea t29) 3) (= (tiempo-tarea t29) 5)
+) (:goal (forall (?t - Tarea) (finalizada ?t)) ) (:metric minimize (ttime)) )
