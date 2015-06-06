@@ -20,13 +20,13 @@
 (= (nivel-programador p14) 1) (= (calidad p14) 2) (= (tareas-programador p14) 2) ; Programador 14
 (= (nivel-programador p15) 2) (= (calidad p15) 2) (= (tareas-programador p15) 2) ; Programador 15
 (= (nivel-programador p16) 3) (= (calidad p16) 1) (= (tareas-programador p16) 2) ; Programador 16
-(= (nivel-tarea t0) 1) (= (tiempo-tarea t0) 5)
-(= (nivel-tarea t1) 1) (= (tiempo-tarea t1) 5)
-(= (nivel-tarea t2) 1) (= (tiempo-tarea t2) 5)
-(= (nivel-tarea t3) 2) (= (tiempo-tarea t3) 5)
-(= (nivel-tarea t4) 1) (= (tiempo-tarea t4) 5)
-(= (nivel-tarea t5) 1) (= (tiempo-tarea t5) 5)
-(= (nivel-tarea t6) 3) (= (tiempo-tarea t6) 5)
-(= (nivel-tarea t7) 2) (= (tiempo-tarea t7) 5)
-(= (nivel-tarea t8) 3) (= (tiempo-tarea t8) 5)
+(= (nivel-tarea t0) 1) (= (tiempo-tarea t0) 0)
+(= (nivel-tarea t1) 1) (= (tiempo-tarea t1) 0)
+(= (nivel-tarea t2) 1) (= (tiempo-tarea t2) 0)
+(= (nivel-tarea t3) 2) (= (tiempo-tarea t3) 0)
+(= (nivel-tarea t4) 1) (= (tiempo-tarea t4) 0)
+(= (nivel-tarea t5) 1) (= (tiempo-tarea t5) 0)
+(= (nivel-tarea t6) 3) (= (tiempo-tarea t6) 0)
+(= (nivel-tarea t7) 2) (= (tiempo-tarea t7) 0)
+(= (nivel-tarea t8) 3) (= (tiempo-tarea t8) 0)
 ) (:goal (forall (?t - Tarea) (finalizada ?t)) ) (:metric minimize (ttime)) )

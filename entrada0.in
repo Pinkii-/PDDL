@@ -1,5 +1,5 @@
 (define (problem test0)
-	
+  
   (:domain mintask)
 
   (:objects
@@ -8,45 +8,43 @@
   )
 
   (:init
-  	(= (ttime) 0)
+    (= (ttime) 0)
     (= (nprog) 0)
-  	(tSimple t1)
-  	(tSimple t2)
-  	(tSimple t3)
+    (tBasica t1)
+    (tBasica t2)
+    (tBasica t3)
 
-  	;Programador 1
-  	(= (nivel-programador p1) 3)
-  	(= (calidad p1) 2)
-  	(= (tareas-programador p1) 2)
-  	;Programador 2
-  	(= (nivel-programador p2) 2)
-  	(= (calidad p2) 2)
-  	(= (tareas-programador p2) 2)
-  	;Programador 3
-    (= (nivel-programador p3) 2)
-    (= (calidad p3) 1)
-    (= (tareas-programador p3) 2)
+    ;Programador 1
+    (= (nivel-programador p1) 3)
+    (= (calidad p1) 2)
+    (= (tareas-programador p1) 2)
+    ;Programador 2 
+    (= (nivel-programador p2) 2)
+    (= (calidad p2) 2)
+    (= (tareas-programador p2) 2)
     ;Programador 3
-    (= (nivel-programador p4) 2)
+    (= (nivel-programador p3) 2)
+    (= (calidad p3) 2)
+    (= (tareas-programador p3) 2)
+    ;Programador 4
+    (= (nivel-programador p4) 1)
     (= (calidad p4) 1)
     (= (tareas-programador p4) 2)
 
-  	;Tarea 1
-  	(= (nivel-tarea t1) 3)
-  	(= (tiempo-tarea t1) 5)
-  	;Tarea 2
-  	(= (nivel-tarea t2) 2)
-  	(= (tiempo-tarea t2) 5)
-  	;Tarea 3
-  	(= (nivel-tarea t3) 1)
-  	(= (tiempo-tarea t3) 5)
+    ;Tarea 1
+    (= (nivel-tarea t1) 3)
+    (= (tiempo-tarea t1) 5)
+    ;Tarea 2
+    (= (nivel-tarea t2) 2)
+    (= (tiempo-tarea t2) 5)
+    ;Tarea 3
+    (= (nivel-tarea t3) 1)
+    (= (tiempo-tarea t3) 5)
 
   ) 
 
   (:goal
-  	(forall (?t - Tarea) (finalizada ?t))
+    (forall (?t - Tarea) (finalizada ?t))
   )
-  ;(:metric minimize (+ (* (ttime) 0.7) (* (nprog) 100)))
-  ;(:metric minimize (ttime))
-  (:metric minimize (nprog))
+  (:metric minimize (+ (* (ttime) 5) (* (nprog) 15)))
 )
