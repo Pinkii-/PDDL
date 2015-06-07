@@ -1,0 +1,65 @@
+(define (problem test0)
+  
+  (:domain mintask)
+
+  (:objects
+    p1 p2 p3 p4 p5 p6 - Programador
+    t1 t2 t3 t4 - Tarea
+  )
+
+  (:init
+    (= (ttime) 0)
+    (= (nprog) 0)
+    (tBasica t1)
+    (tBasica t2)
+    (tBasica t3)
+    (tBasica t4)
+
+    ;Programador 1
+    (= (nivel-programador p1) 3)
+    (= (calidad p1) 2)
+    (= (tareas-programador p1) 2)
+    ;Programador 2 
+    (= (nivel-programador p2) 2)
+    (= (calidad p2) 2)
+    (= (tareas-programador p2) 2)
+    ;Programador 3
+    (= (nivel-programador p3) 1)
+    (= (calidad p3) 2)
+    (= (tareas-programador p3) 2)
+    ;Programador 4
+    (= (nivel-programador p4) 1)
+    (= (calidad p4) 1)
+    (= (tareas-programador p4) 2)
+    ;Programador 5
+    (= (nivel-programador p5) 1)
+    (= (calidad p5) 2)
+    (= (tareas-programador p5) 2)
+    ;Programador 6
+    (= (nivel-programador p6) 1)
+    (= (calidad p6) 1)
+    (= (tareas-programador p6) 2)
+
+    ;Tarea 1
+    (= (nivel-tarea t1) 3)
+    (= (tiempo-tarea t1) 5)
+    ;Tarea 2
+    (= (nivel-tarea t2) 2)
+    (= (tiempo-tarea t2) 5)
+    ;Tarea 3
+    (= (nivel-tarea t3) 2)
+    (= (tiempo-tarea t3) 5)
+    ;Tarea 4
+    (= (nivel-tarea t4) 1)
+    (= (tiempo-tarea t4) 5)
+
+  ) 
+
+  (:goal
+    (and 
+        (forall (?t - Tarea) (finalizada ?t))
+        (forall (?p - Programador) (not (por-contar ?p)))
+    )
+  )
+  (:metric minimize (+ (* (nprog) 5) (* (ttime) 15)))
+)

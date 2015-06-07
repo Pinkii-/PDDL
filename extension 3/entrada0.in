@@ -1,10 +1,10 @@
-(define (problem test1)
+(define (problem test0)
   
   (:domain mintask)
 
   (:objects
     p1 p2 p3 p4 - Programador
-    t1 t2 t3 t4 t5 t6 - Tarea
+    t1 t2 t3 t4 - Tarea
   )
 
   (:init
@@ -13,21 +13,23 @@
     (tBasica t2)
     (tBasica t3)
     (tBasica t4)
-    (tBasica t5)
-    (tBasica t6)
 
     ;Programador 1
     (= (nivel-programador p1) 3)
     (= (calidad p1) 2)
+    (= (tareas-programador p1) 2)
     ;Programador 2 
-    (= (nivel-programador p2) 1)
+    (= (nivel-programador p2) 2)
     (= (calidad p2) 2)
+    (= (tareas-programador p2) 2)
     ;Programador 3
-    (= (nivel-programador p3) 1)
+    (= (nivel-programador p3) 2)
     (= (calidad p3) 2)
+    (= (tareas-programador p3) 2)
     ;Programador 4
     (= (nivel-programador p4) 1)
     (= (calidad p4) 1)
+    (= (tareas-programador p4) 2)
 
     ;Tarea 1
     (= (nivel-tarea t1) 3)
@@ -39,18 +41,14 @@
     (= (nivel-tarea t3) 1)
     (= (tiempo-tarea t3) 5)
     ;Tarea 4
-    (= (nivel-tarea t4) 3)
+    (= (nivel-tarea t4) 1)
     (= (tiempo-tarea t4) 5)
-    ;Tarea 5
-    (= (nivel-tarea t5) 2)
-    (= (tiempo-tarea t5) 5)
-    ;Tarea 6
-    (= (nivel-tarea t6) 1)
-    (= (tiempo-tarea t6) 5)
 
   ) 
 
   (:goal
     (forall (?t - Tarea) (finalizada ?t))
   )
+  (:metric minimize (ttime))
+
 )

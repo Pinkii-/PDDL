@@ -8,11 +8,11 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
 	int maxTask = 50;
-	if (argc > 1) maxTask = argv[1];
 	
 	srand(time(NULL));
 	cout << "(define (problem test0) (:domain mintask)" << endl << " (:objects" << endl;
 	int numTasks = 1+rand()%maxTask;
+	if (argc > 1) numTasks = stoi(argv[1]);
 	int numProg = numTasks + rand()%numTasks;
 	for (int i = 0; i < numProg; ++i) cout << " p" << i;
 	cout << " - Programador" << endl;
@@ -26,6 +26,6 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < numTasks; ++i) {
 		cout << "(= (nivel-tarea t" << i << ") " << (rand()%3)+1 << ") (= (tiempo-tarea t" << i << ") 5)" << endl;
 	}
-	cout << ") (:goal (forall (?t - Tarea) (finalizada ?t)) ) (:metric minimize (+ (* (ttime) 5) (* (nprog) 15))) )" << endl;
+	cout << ") (:goal (and (forall (?t - Tarea) (finalizada ?t)) (forall (?p - Programador) (not (por-contar ?p))) ) ) (:metric minimize (+ (* (ttime) 5) (* (nprog) 15))) )" << endl;
 	return 0;
 }
